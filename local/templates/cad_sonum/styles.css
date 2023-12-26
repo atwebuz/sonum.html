@@ -1,0 +1,72 @@
+.breadcrumb{
+    background-color: transparent;
+}
+a.card-article:hover{
+    color:#fff;
+}
+
+.mb-4 > p {
+    display: none;
+}
+
+.tcb-promo-options {
+    margin-bottom: 24px !important;
+}
+
+.tcb-promo-options > div {
+    margin-bottom: 12px;
+}
+
+.tcb-promo-options > div > input {
+    display: none;
+}
+
+.tcb-promo-options > div > label {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.tcb-promo-options > div > label:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    background: #EEA593;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity .2s ease-in-out;
+}
+.order-option__name {
+    margin-bottom: 12px;
+}
+
+
+.tcb-promo-options > div > label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    z-index: 1;
+    transition: border .2s ease-in-out;
+}
+
+
+.tcb-promo-options > div > input:checked + label:after {
+    border: 1px solid #EEA593;
+}
+
+.tcb-promo-options > div > input:checked + label:before {
+    opacity: 1;
+}
