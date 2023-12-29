@@ -115,8 +115,11 @@
 
 
 
-				<a href="#" class="header-top__btn" data-modal-ajax-open="call" data-place="Кнопка в шапке"
-					data-url="https://sonum.ru/">Заказать звонок</a>
+				<!-- <a href="#" class="header-top__btn" onclick="toggleModal('call')">Заказать звонок</a> -->
+				<a href="#" class="header-top__btn" onclick="callModal()">Заказать звонок</a>
+
+
+
 			</div>
 		</div>
 		<div class="header-main">
@@ -4461,15 +4464,15 @@
 				<div class="footer__copyright-text">
 					<div>
 						© 2013—2023 <br>
-						Интернет-магазин кроватей и матрасов TM Сонум <a href="/policy/" target="_blank"
+						Интернет-магазин кроватей и матрасов TM Сонум <a href="/policy/index.htm" target="_blank"
 							class="footer__copyright-link md-none">Политика конфиденциальности</a>
 					</div>
 					<div>
 						ООО «Интрейд», ИНН 3702131024, ОГРН 1163702054416
-						<br>Все права защищены. <a href="/policy/soglashenie/" target="_blank"
+						<br>Все права защищены. <a href="/policy/soglashenie/index.htm" target="_blank"
 							class="footer__copyright-link">Пользовательское соглашение</a>
 					</div>
-					<a href="/policy/" target="_blank" class="footer__copyright-link none md-block">Политика
+					<a href="/policy/index.htm" target="_blank" class="footer__copyright-link none md-block">Политика
 						конфиденциальности</a>
 				</div>
 				<div class="footer__pay-and-link">
@@ -4683,7 +4686,7 @@
 												style="position: relative; right: 0px; top: 0px; border: 0px; z-index: 9999; display: block;"
 												height="60"></iframe></div>
 									</div><span class="form-license"> Нажимая кнопку «Получить код» вы подтверждаете
-										свое согласие на обработку <a href="/policy/"> пользовательских
+										свое согласие на обработку <a href="/policy/index.htm"> пользовательских
 											данных</a></span>
 								</form>
 							</div>
@@ -4693,6 +4696,265 @@
 			</div>
 		</div>
 	</div>
+
+
+	<div class="modal modal--min" data-modal="call" id="callModal">
+		<div class="modal__inner" data-modal-inner="call">
+			<div class="modal__header">
+				<h3 class="modal__title">Связаться с нами</h3>
+				<button type="button" class="modal__close" data-modal-close="call">
+					<svg class="icon icon-close">
+				<use xlink:href="/local/templates/cad_sonum/img/sprite.svg?169530869187562#icon-close"></use>
+				</svg>            </button>
+			</div>
+			<div class="modal__main gvrvrgv">
+				<div class="call-modal">
+					<div class="call-modal__our-number">
+						
+	
+	
+		<a href="tel:88007003429"><span>8 (800) 700-34-29</span></a>
+	<span>Ежедневно с 9:00 до 20:00</span>
+	
+	
+	
+					</div>
+					<form class="ajax-form form-call">
+						<input type="hidden" name="action" value="WebForm/Call">
+						<input type="hidden" name="ajaxCallback" value="afterCall">
+						<input type="hidden" name="url" value="https://sonum.ru/">
+						<input type="hidden" name="place" value="Кнопка в шапке">
+						<h3 class="form-call__title">Заказать звонок</h3>
+						<input type="text" name="name" class="input" placeholder="Имя" data-required="">
+						<input type="tel" name="phone" class="input" autocomplete="off" data-required-tel="" placeholder="+7 (___) ___-__-__">
+						<button type="submit" class="btn btn-sbm">Свяжитесь со мной</button>
+						<span class="form-license">
+							Отправляя заявку, я соглашаюсь с условиями <a href="/policy/index.htm">Политики конфиденциальности</a>
+						 </span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal" data-modal="city">
+		<div class="modal__inner" data-modal-inner="city">
+			<div class="modal__header">
+				<h3 class="modal__title">Выберите город</h3>
+				<button type="button" class="modal__close" data-modal-close="city">
+					<svg class="icon icon-close">
+				<use xlink:href="/local/templates/cad_sonum/img/sprite.svg?169530869187562#icon-close"></use>
+				</svg>			</button>
+			</div>
+			<div class="modal__main">
+				
+	<div class="city-modal">
+			<form action="#">
+				<div class="form xxs-block">
+					<input type="text" placeholder="Введите название города" class="input input--r-indent js-input-city">
+					<button class="form__btn btn xs-none" type="submit">Применить</button>
+					<button class="form__btn btn none xs-block" type="submit">
+						<svg class="icon icon-arrow-right">
+				<use xlink:href="/local/templates/cad_sonum/img/sprite.svg?169530869187562#icon-arrow-right"></use>
+				</svg>				</button>
+				</div>
+				<div class="example-city">Например: <span>Москва</span> <span>Санкт-Петербург</span></div>
+				<div class="city-modal__wrap custom-scroll">
+					<ul class="city-modal__list scrollbar">
+												<li>
+								<a href="javascript:void(0)" data-city="Москва" data-id="671">Москва</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Иваново" data-id="675">Иваново</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Нижний Новгород" data-id="674">Нижний Новгород</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Алматы" data-id="959">Алматы</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Анапа" data-id="932">Анапа</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Астрахань" data-id="958">Астрахань</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Барнаул" data-id="973">Барнаул</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Белореченск" data-id="991">Белореченск</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Благовещенск" data-id="937">Благовещенск</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Брянск" data-id="871">Брянск</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Великий Новгород" data-id="956">Великий Новгород</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Владивосток" data-id="873">Владивосток</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Владимир" data-id="868">Владимир</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Волгоград" data-id="887">Волгоград</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Вологда" data-id="940">Вологда</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Воронеж" data-id="947">Воронеж</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Геленджик" data-id="952">Геленджик</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Грозный" data-id="950">Грозный</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Ижевск" data-id="1001">Ижевск</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Казань" data-id="1003">Казань</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Калининград" data-id="955">Калининград</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Киров" data-id="948">Киров</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Кострома" data-id="672">Кострома</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Краснодар" data-id="941">Краснодар</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Красноярск" data-id="967">Красноярск</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Магадан" data-id="962">Магадан</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Мурманск" data-id="902">Мурманск</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Назрань" data-id="931">Назрань</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Находка" data-id="966">Находка</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Нерюнгри" data-id="960">Нерюнгри</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Новокузнецк" data-id="968">Новокузнецк</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Новосибирск" data-id="963">Новосибирск</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Орел" data-id="1010">Орел</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Пятигорск" data-id="870">Пятигорск</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Ростов-на-Дону" data-id="874">Ростов-на-Дону</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Рыбинск" data-id="936">Рыбинск</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Рязань" data-id="879">Рязань</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Санкт-Петербург" data-id="872">Санкт-Петербург</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Саранск" data-id="957">Саранск</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Севастополь" data-id="1063">Севастополь</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Северодвинск" data-id="1008">Северодвинск</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Сергиев Посад" data-id="951">Сергиев Посад</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Сочи" data-id="867">Сочи</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Ставрополь" data-id="869">Ставрополь</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Тверь" data-id="938">Тверь</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Тула" data-id="880">Тула</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Тюмень" data-id="1007">Тюмень</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Хабаровск" data-id="939">Хабаровск</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Чебоксары" data-id="949">Чебоксары</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Череповец" data-id="886">Череповец</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Якутск" data-id="881">Якутск</a>
+							</li>
+												<li>
+								<a href="javascript:void(0)" data-city="Ярославль" data-id="673">Ярославль</a>
+							</li>
+										</ul>
+				</div>
+				<a href="#" class="city-modal__not-found" data-modal-close="city">Моего города нет в списке</a>
+			</form>
+	</div>
+	
+	
+			</div>
+		</div>
+	</div>
+	
+	<script>
+
+function callModal() {
+  var modal = document.getElementById('callModal');
+
+  // Check if the modal element exists
+  if (modal) {
+    // Get the computed style of the element
+    var computedStyle = window.getComputedStyle(modal);
+
+    // Check if the display property is 'none' or an empty string
+    if (computedStyle) {
+      // Add the 'is-active' class to show the modal
+      modal.classList.add('is-active');
+    } else {
+      // Remove the 'is-active' class to hide the modal
+      modal.classList.remove('is-active');
+    }
+  } else {
+    console.error("Modal element not found with ID: callModal");
+  }
+}
+
+
+	</script>
+	
 	<script type="module" src="./local/vue/dist/assets/vueModal-943de3ae.js"></script>
 	<!-- END content -->
 	<!-- Top.Mail.Ru counter -->
