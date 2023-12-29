@@ -17,6 +17,9 @@
 	<link href="./local/templates/cad_sonum/css/style.css" type="text/css" data-template-style="true"
 		rel="stylesheet" />
 	<link href="./local/templates/cad_sonum/styles.css" type="text/css" data-template-style="true" rel="stylesheet" />
+	<link rel="stylesheet" href="/assets/css/all.min.css">
+	<link rel="stylesheet" href="/assets/js/pro.min.js">
+	<link rel="stylesheet" href="/assets/webfonts/free-fa-brands-400.eot">
 
 
 
@@ -332,9 +335,10 @@
 
 								<div class="advertise-card__bottom">
 									<div class="big-b__link">
+										
 										<svg class="icon icon-arrow-right">
 											<use
-												xlink:href="./local/templates/cad_sonum/img/sprite.svg?169530869187562#icon-arrow-right">
+												xlink:href="./local/templates/cad_sonum/img/sprite.svg#icon-arrow-right">
 											</use>
 										</svg>
 									</div>
@@ -626,11 +630,14 @@
 					<div class="form">
 						<input type="text" placeholder="Поиск по каталогу" class="form__input" autocomplete="off">
 						<button class="form__btn form__btn--search btn" type="submit">
-							<svg class="icon icon-search">
+							<!-- <svg class="icon icon-search">
 								<use
 									xlink:href="./local/templates/cad_sonum/img/sprite.svg?169530869187562#icon-search">
 								</use>
-							</svg> </button>
+							</svg>  -->
+							<i class="fal fa-search"></i>
+						
+						</button>
 					</div>
 				</div>
 
@@ -643,50 +650,43 @@
 								</use>
 							</svg>
 						</div>
+						
 					</a>
 
-					<div class="customer-panel__item none xmd-flex sm-none">
-						<a href="#" class="customer-panel__icon" data-modal-ajax-open="header-search">
-							<svg class="icon icon-search">
-								<use
-									xlink:href="./local/templates/cad_sonum/img/sprite.svg?169530869187562#icon-search">
-								</use>
-							</svg> </a>
-					</div>
-
+			
 
 					<a href="javascript:void(0);" class="customer-panel__item customer-panel__item--compare">
 						<div class="customer-panel__num customer-panel__item--compare-count"></div>
-						<div class="customer-panel__icon">
-							<svg class="icon icon-comparison">
-								<use
-									xlink:href="./local/templates/cad_sonum/img/sprite.svg?169530869187562#icon-comparison">
-								</use>
-							</svg>
+							
+							<i class="fal fa-user"></i>
 						</div>
 					</a>
 
 
-
+					
 					<a href="/cabinet/favourite/" class="customer-panel__item">
 						<div class="customer-panel__num js-favourite-num  d-none">0</div>
 						<div class="customer-panel__icon">
-							<svg class="icon icon-heart">
+							<!-- <svg class="icon icon-heart">
 								<use xlink:href="./local/templates/cad_sonum/img/sprite.svg?169530869187562#icon-heart">
 								</use>
-							</svg>
+							</svg> -->
+							<i class="fal fa-heart"></i>
+							
 						</div>
 					</a>
 
 
+			
 					<a href="/cabinet/cart/" class="customer-panel__item">
 						<div class="customer-panel__num js-count-basket-items">0</div>
 						<div class="customer-panel__icon">
-							<svg class="icon icon-basket">
+							<!-- <svg class="icon icon-basket">
 								<use
 									xlink:href="./local/templates/cad_sonum/img/sprite.svg?169530869187562#icon-basket">
 								</use>
-							</svg>
+							</svg> -->
+							<i class="fal fa-shopping-cart"></i>
 						</div>
 					</a>
 				</div>
@@ -1585,18 +1585,20 @@
 					</div>
 					<div class="arrows-slider">
 						<div class="arrows-slider__item slider-arrow--prev">
-							<svg class="icon icon-arrow-left">
+							<!-- <svg class="icon icon-arrow-left">
 								<use
 									xlink:href="./local/templates/cad_sonum/img/sprite.svg?169530869187562#icon-arrow-left">
 								</use>
-							</svg>
+							</svg> -->
+							<i class="fal fa-angle-left"></i>
 						</div>
 						<div class="arrows-slider__item slider-arrow--next">
-							<svg class="icon icon-arrow-right">
+							<!-- <svg class="icon icon-arrow-right">
 								<use
 									xlink:href="./local/templates/cad_sonum/img/sprite.svg?169530869187562#icon-arrow-right">
 								</use>
-							</svg>
+							</svg> -->
+							<i class="fal fa-angle-right"></i>
 						</div>
 					</div>
 					<div class="swiper-pagination"></div>
@@ -4514,11 +4516,19 @@
 		<noindex>
 			<div class="jivo-pseudo-btn--fixed md-none">
 				<button class="jivo-pseudo-btn">
-					<svg class="icon icon-write-bw">
+					<!-- <svg class="icon icon-write-bw">
 						<use xlink:href="./local/templates/cad_sonum/img/sprite.svg?169530869187562#icon-write-bw">
 						</use>
-					</svg> </button>
+					</svg> -->
+					<i class="fas fa-phone-alt icon icon-write-bw"></i>
+				 </button>
 				<div class="jivo-pseudo-btn__color-socials color-socials">
+					<style>
+
+						.jivo-pseudo-btn .icon-write-bw{
+							height: 10px !important;
+						}
+					</style>
 
 					<a href="https://t.me/sonumru_bot" class="color-socials__link" target="_blank"
 						title="Написать нам в телеграмм">
